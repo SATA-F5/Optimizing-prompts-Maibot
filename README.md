@@ -45,6 +45,7 @@
 .
 ├── main.py
 ├── metadata.yaml
+├── logo.png
 ├── _conf_schema.json
 ├── prompts/
 │   ├── identity_block.prompt
