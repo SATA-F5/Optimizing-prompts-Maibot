@@ -1,0 +1,53 @@
+{
+  "enable_identity": {
+    "description": "身份认知模块",
+    "type": "bool",
+    "default": true,
+    "hint": "注入角色一致性、自我认知和真实感相关规则。"
+  },
+  "enable_behavior": {
+    "description": "行为风格模块",
+    "type": "bool",
+    "default": true,
+    "hint": "注入自然互动、发言时机、错误处理和尊重性相关规则。"
+  },
+  "enable_group_chat": {
+    "description": "群聊行为模块",
+    "type": "bool",
+    "default": true,
+    "hint": "注入群聊场景下的发言策略、刷屏规避和私聊适配规则。"
+  },
+  "enable_reply_style": {
+    "description": "回复风格模块",
+    "type": "bool",
+    "default": true,
+    "hint": "注入口语化表达、格式净化和观点独立性相关规则。"
+  },
+  "enable_context": {
+    "description": "上下文理解模块",
+    "type": "bool",
+    "default": true,
+    "hint": "注入历史关系推断、歧义处理和对话连贯性相关规则。"
+  },
+  "enable_tool_usage": {
+    "description": "工具使用模块",
+    "type": "bool",
+    "default": true,
+    "hint": "注入工具调用策略、并行调用和错误恢复相关规则。"
+  },
+  "injection_mode": {
+    "description": "注入位置",
+    "type": "string",
+    "default": "system_prompt",
+    "options": ["system_prompt", "extra_user_content"],
+    "labels": ["系统提示词追加", "用户消息追加"],
+    "subtitles": ["稳定规则，适合长期生效的设定", "作为额外用户消息，不影响系统提示词缓存"],
+    "hint": "系统提示词追加适合稳定的规则；用户消息追加将内容放在本轮用户输入之后。"
+  },
+  "custom_suffix": {
+    "description": "自定义追加文本",
+    "type": "text",
+    "default": "",
+    "hint": "在所有模块之后额外追加的自定义规则，留空则不追加。"
+  }
+}
