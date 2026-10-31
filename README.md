@@ -39,8 +39,10 @@
 
 ## 文件结构
 
+代码文件直接位于仓库根目录：
+
 ```
-pulid_astrbot_prompt_to_maibot/
+.
 ├── main.py
 ├── metadata.yaml
 ├── _conf_schema.json

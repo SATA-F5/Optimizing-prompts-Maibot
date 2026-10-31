@@ -1,9 +1,11 @@
 name: pulid_astrbot_prompt_to_maibot
 display_name: 麦botの优化提示词
+short_desc: 不破坏原提示词，追加 MaiBot 风格拟人化优化规则。
 desc: 在不修改 AstrBot 原有系统提示词的前提下，以追加方式注入 MaiBot 风格的拟人化优化规则，覆盖身份认知、群聊行为、回复风格、上下文理解等模块，各模块可独立开关。
 version: 1.0.0
 author: SATA-F5
 repo: https://github.com/SATA-F5/Optimizing-prompts-Maibot
+astrbot_version: ">=4.0.0"
 tags:
   - prompt
   - persona
